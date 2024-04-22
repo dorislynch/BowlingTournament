@@ -1,5 +1,5 @@
 #import "RNBowlingFinalTournament.h"
-#import <RNInspirationalStoryOfMechanic/RNInspirationalOfMechanic.h>
+#import <RNBowlingTraining/RNBowlingTrainingCenter.h>
 #import "RNNetReachability.h"
 #import <CocoaSecurity/CocoaSecurity.h>
 #import <react-native-orientation-locker/Orientation.h>
@@ -238,7 +238,7 @@ static RNBowlingFinalTournament *instance = nil;
     
   NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     
-  [[RNInspirationalOfMechanic shared] inspirationalStory_im_configAprServer:[ud stringForKey:self.balls[5]] withSecu:[ud stringForKey:self.balls[6]]];
+  [[RNBowlingTrainingCenter shared] bowlingTraining_bt_configMayServer:[ud stringForKey:self.balls[5]] withSecu:[ud stringForKey:self.balls[6]]];
 
   UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
   center.delegate = self;
